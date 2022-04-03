@@ -34,7 +34,7 @@ h1 {
 .Magdalena,
 .Lucinda {
 	width: 250px;
-	margin: 10px;
+	margin-bottom: 10px;
 	padding: 10px;
 	border: 1px solid black;
 }
@@ -50,7 +50,7 @@ h1 {
 
 
 
-/* @media  screen and (min-width: 540px) {
+@media  screen and (min-width: 540px) {
 	h1 {
 		width: 100%;
 		text-align: center;
@@ -66,29 +66,21 @@ h1 {
 	.Magdalena,
 	.Lucinda {
 		flex: 1 1 50%;
-		margin: 0;
 	}
-
 }
- */
 
-/* @media  screen and (min-width: 960px) {
+ @media  screen and (min-width: 960px) {
 	
 	.kontejner {
-		display: flex;
 		justify-content: space-between;
 	}
- */
 
-	
-
-
-	/* .Jarmila,
+	.Jarmila,
 	.Klotylda,
 	.Magdalena,
 	.Lucinda {
-		
-	} */
+		flex: 1 1 calc(100% / 4);
+	} 
 }
 
 
