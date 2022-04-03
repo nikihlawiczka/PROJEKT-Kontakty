@@ -15,3 +15,81 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+/* ---------------------------------------------------- */
+
+p,
+h2 {
+	text-align: center;
+}
+
+h1 {
+	width: 250px;
+	margin: 10px;
+	text-align: center;
+}
+
+.Jarmila, 
+.Klotylda,
+.Magdalena,
+.Lucinda {
+	width: 250px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.fotojarmily,
+.fotoklotyldy,
+.fotomagdaleny,
+.fotolucindy {
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+
+
+/* @media  screen and (min-width: 540px) {
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.kontejner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.Jarmila,
+	.Klotylda,
+	.Magdalena,
+	.Lucinda {
+		flex: 1 1 50%;
+		margin: 0;
+	}
+
+}
+ */
+
+/* @media  screen and (min-width: 960px) {
+	
+	.kontejner {
+		display: flex;
+		justify-content: space-between;
+	}
+ */
+
+	
+
+
+	/* .Jarmila,
+	.Klotylda,
+	.Magdalena,
+	.Lucinda {
+		
+	} */
+}
+
+
+
