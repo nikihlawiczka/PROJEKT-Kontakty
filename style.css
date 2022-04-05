@@ -24,7 +24,7 @@ h2 {
 }
 
 h1 {
-	width: 250px;
+	/* width: 250px; */
 	margin: 10px;
 	text-align: center;
 }
@@ -33,7 +33,7 @@ h1 {
 .Klotylda,
 .Magdalena,
 .Lucinda {
-	width: 250px;
+/* 	width: 250px; */
 	margin-bottom: 10px;
 	padding: 10px;
 	border: 1px solid black;
@@ -60,13 +60,14 @@ h1 {
 	.kontejner {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 5px;
 	}
 	
 	.Jarmila,
 	.Klotylda,
 	.Magdalena,
 	.Lucinda {
-		flex: 1 1 50%;
+		flex: 0 1 calc(100% / 2 - 10px);
 	}
 }
 
@@ -80,7 +81,7 @@ h1 {
 	.Klotylda,
 	.Magdalena,
 	.Lucinda {
-		flex: 1 1 calc(100% / 4);
+		flex: 1 1 calc(100% / 4 - 10px);
 	} 
 }
 
