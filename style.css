@@ -1,10 +1,16 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
-	font-family: sans-serif;
-	font-size: 14px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 /* ---------------------------------------------------- */
@@ -20,70 +26,53 @@ PC      960px a víc
 
 p,
 h2 {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	/* width: 250px; */
-	margin: 10px;
-	text-align: center;
+  /* width: 250px; */
+  margin: 10px;
+  text-align: center;
 }
 
-.Jarmila, 
-.Klotylda,
-.Magdalena,
-.Lucinda {
-/* 	width: 250px; */
-	margin-bottom: 10px;
-	padding: 10px;
-	border: 1px solid black;
-	border-radius: 10%;
+.contact {
+  /* 	width: 250px; */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex-grow: 1;
 }
 
-.fotojarmily,
-.fotoklotyldy,
-.fotomagdaleny,
-.fotolucindy {
-	display: block;
-	margin: 0 auto;
-	border-radius: 50%;
+.foto {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
+@media screen and (min-width: 540px) {
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
 
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 
-@media  screen and (min-width: 540px) {
-	h1 {
-		width: 100%;
-		text-align: center;
-	}
-	
-	.kontejner {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 5px;
-	}
-	
-	.Jarmila,
-	.Klotylda,
-	.Magdalena,
-	.Lucinda {
-		flex: 0 1 calc(100% / 2 - 10px);
-	}
+  .contact {
+    flex: 0 1 calc(100% / 2 - 10px);
+  }
 }
 
- @media  screen and (min-width: 960px) {
-	
-	.kontejner {
-		justify-content: space-between;
-	}
+@media screen and (min-width: 960px) {
+  .kontejner {
+    justify-content: space-between;
+  }
 
-	.Jarmila,
-	.Klotylda,
-	.Magdalena,
-	.Lucinda {
-		flex: 1 1 calc(100% / 4 - 10px);
-	} 
+  .contact {
+    flex: 1 1 calc(100% / 4 - 10px);
+  }
 }
-
-
-
